@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.png) no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    border: 3px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+}
+
+.stat-container {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.18);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#progressbar {
+    width: 100%;
+    height: 7px;
+    background: rgba(255,194,209,0.3);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background: #ff6f91;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+#numbers {
+    width: 80px;
+    height: 80px;
+    background: #ff6f91;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.input-area button {
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #ff6f91;
+    color: white;
+}
+
+.todos-container {
+    width: 100%;
+    text-align: center;
+}
+
+.empty-image {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,194,209,0.3);
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#task-list li .checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+#task-list li.completed span {
+    text-decoration: line-through;
+    color: black;
+}
+
+.task-button {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.task-button button {
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: orange;
+}
+
+.delete-btn {
+    background: crimson;
+    color: white;
+}
